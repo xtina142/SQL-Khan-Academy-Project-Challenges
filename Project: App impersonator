@@ -1,0 +1,32 @@
+CREATE TABLE exercise_log (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    age INTEGER,
+    activity TEXT,
+    hrs_total_activity INTEGER,
+    calories_burned INTEGER);
+
+
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('Emily', 24, 'hiking', 4, 1800);
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('David', 29, 'biking', 8, 6000);
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('Adam', 32, 'running', 3, 2100);
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('Amanda', 21, 'walking', 2, 900);
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('Jasmine', 30, 'volleyball', 6, 2400);
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('Anthony', 24, 'diving', 4, 2000);
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('Liz', 26, 'tennis', 5.5, 4300); 
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('Eric', 34, 'golf' , 4, 1100);
+INSERT INTO exercise_log (name, age, activity, hrs_total_activity, calories_burned) VALUES ('Sam', 40, 'softball', 1, 300);
+
+SELECT * FROM exercise_log;
+
+
+UPDATE exercise_log
+SET hrs_total_activity = 3.5
+WHERE id = 3;
+
+SELECT * FROM exercise_log;
+
+DELETE FROM exercise_log
+WHERE id = 9;
+
+SELECT * FROM exercise_log;
