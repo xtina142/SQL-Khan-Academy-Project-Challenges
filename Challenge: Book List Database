@@ -1,0 +1,22 @@
+What are your favorite books? You can make a database table to store them in! In this first step, create a table to store your list of books. It should have columns for id, name, and rating.
+
+
+/** Favorite Books:
+The Lord of the Rings, 5
+Twilight, 5
+The Hobbit, 4 
+Percy Jackson and the Olympians, 6
+Harry Potter, 2
+Maze Runner, 3
+**/
+
+CREATE TABLE favorite_books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER );
+
+INSERT INTO favorite_books values (1, "The Lord Of The Rings", 5);
+INSERT INTO favorite_books values (2, "Twilight", 5);
+INSERT INTO favorite_books values (3, "The Hobbit", 4);
+INSERT INTO favorite_books values (4, "Percy Jackson and the Olympians", 6);
+INSERT INTO favorite_books values (5, "Harry Potter", 2);
+INSERT INTO favorite_books values (6, "Maze Runner" , 3);
+ 
+SELECT * FROM favorite_books; 
